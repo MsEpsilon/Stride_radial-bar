@@ -1,0 +1,70 @@
+!UIPageAsset
+Id: a987551b-05b5-4ce5-b986-607404f77b57
+SerializedVersion: {Stride: 2.1.0.1}
+Tags: []
+Design:
+    Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+Hierarchy:
+    RootParts:
+        - !Grid ref!! fdc153c8-13dd-48b1-bc62-0e184db5aeae
+    Parts:
+        -   UIElement: !Slider
+                Id: 3d73a8d8-a57f-4828-adf2-9a232edaddb4
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 5
+                Width: 252.5
+                Height: 32.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Bottom
+                Margin: {Left: 125.0, Bottom: 322.0}
+                Name: progr
+                Value: 0.25
+                Step: 0.05
+                TrackBackgroundImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 9
+                TrackForegroundImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 12
+                TrackStartingOffsets: {X: 3.0, Y: 3.0}
+                ThumbImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 7
+                MouseOverThumbImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 6
+                TickImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 8
+                TickOffset: 13.0
+        -   UIElement: !ImageElement
+                Id: 8e8ebbb9-ebb6-4b1d-ba13-350f2a2c59fc
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 263.0
+                Height: 263.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 114.5, Top: 87.5}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Source: !SpriteFromTexture
+                    Texture: 8f46d274-e6d4-411e-82d2-91098de27d8c:RenderTexture
+                    Center: {X: 0.0, Y: 0.0}
+                Color: {R: 255, G: 255, B: 255, A: 255}
+        -   UIElement: !Grid
+                Id: fdc153c8-13dd-48b1-bc62-0e184db5aeae
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Children:
+                    09e556b42cc294ad273c189e5a3428b7: !ImageElement ref!! 8e8ebbb9-ebb6-4b1d-ba13-350f2a2c59fc
+                    4074105901439aace65202fb5a6ad5d9: !Slider ref!! 3d73a8d8-a57f-4828-adf2-9a232edaddb4
+                RowDefinitions: {}
+                ColumnDefinitions: {}
+                LayerDefinitions: {}

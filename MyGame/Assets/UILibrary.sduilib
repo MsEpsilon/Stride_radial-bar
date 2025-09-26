@@ -1,0 +1,82 @@
+!UILibraryAsset
+Id: e062d15a-61ec-4347-813d-501f65a59ced
+SerializedVersion: {Stride: 2.1.0.1}
+Tags: []
+Design:
+    Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+PublicUIElements: {}
+Hierarchy:
+    RootParts:
+        - !Canvas ref!! ce486541-127b-426d-968e-4d16dc9d9e5d
+    Parts:
+        -   UIElement: !EditText
+                Id: 920ba60a-ee95-44c7-a86e-d0ce2183b446
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 5
+                CanBeHitByUser: true
+                Width: 306.0
+                Height: 50.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {}
+                Padding: {Left: 8.0, Top: 4.0, Right: 8.0, Bottom: 8.0}
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+                ActiveImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 3
+                InactiveImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 4
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 5
+                CaretColor: {R: 240, G: 240, B: 240, A: 255}
+                CaretWidth: 1.0
+                SelectionColor: {R: 240, G: 240, B: 240, A: 255}
+                IMESelectionColor: {R: 240, G: 255, B: 240, A: 255}
+                CaretFrequency: 1.0
+                Text: unspec
+        -   UIElement: !Button
+                Id: a70ab3c7-c51d-42d1-bd87-4c40a86b7ba1
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 2
+                Width: 59.0
+                Height: 50.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 306.0}
+                Content: !TextBlock ref!! bb8cfa88-7423-4bd0-9421-785ec7a1a835
+                PressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 2
+                NotPressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 1
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                Color: {R: 255, G: 255, B: 255, A: 255}
+        -   UIElement: !TextBlock
+                Id: bb8cfa88-7423-4bd0-9421-785ec7a1a835
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                Text: '\/'
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+                OutlineColor: {R: 0, G: 0, B: 0, A: 255}
+                OutlineThickness: 0.0
+        -   UIElement: !Canvas
+                Id: ce486541-127b-426d-968e-4d16dc9d9e5d
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                Children:
+                    63144285ec1ea0c228a72d504b8f5f8b: !Button ref!! a70ab3c7-c51d-42d1-bd87-4c40a86b7ba1
+                    96b14c97e343a9aa9c4d555de033d9c9: !EditText ref!! 920ba60a-ee95-44c7-a86e-d0ce2183b446

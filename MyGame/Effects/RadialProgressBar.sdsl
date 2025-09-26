@@ -1,0 +1,33 @@
+﻿shader RadialProgressBar : SpriteBase, Math
+{
+    [Color] float4 CompleteBarColor;
+    [Color] float4 IncompleteBarColor;
+    [Color] float4 BackgroundColor;
+    float Progress;
+    float BarThickness;
+
+    stage override float4 Shading()
+    {
+        //If inside inner circle - return background color
+        if( pow(streams.TexCoord.x - 0.5, 2) + pow(streams.TexCoord.y - 0.5, 2) <= 0.25 - (BarThickness * BarThickness))
+        {
+            return BackgroundColor;
+        }
+        //if outside outer circle - determine angle
+        else if( pow(streams.TexCoord.x - 0.5, 2) + pow(streams.TexCoord.y - 0.5, 2) <= 0.25)
+        {
+            float theta = atan2(streams.TexCoord.y - 0.5, streams.TexCoord.x - 0.5);
+            float phi = lerp(-PI, PI, Progress);
+
+            if(phi >= theta)
+            {
+                return CompleteBarColor;
+            }
+            else
+            {
+                return IncompleteBarColor;
+            }
+        }
+        return float4(0,0,0, 0);
+    }
+};
